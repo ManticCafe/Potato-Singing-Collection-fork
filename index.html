@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>土豆歌唱合集导航</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-music"></i> <span id="repoName">土豆歌唱合集导航</span></h1>
+            <p class="subtitle">预览并播放土豆歌唱合集中的音频文件</p>
+            <div class="audio-player" id="audioPlayer">
+                <div class="player-controls">
+                    <div class="basic-controls">
+                        <button id="playBtn" class="control-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button id="pauseBtn" class="control-btn">
+                            <i class="fas fa-pause"></i>
+                        </button>
+                        <button id="stopBtn" class="control-btn">
+                            <i class="fas fa-stop"></i>
+                        </button>
+                        <button id="downloadBtn" class="control-btn" title="下载当前音频">
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
+                    <div class="volume-section">
+                        <div class="volume-control">
+                            <i class="fas fa-volume-up"></i>
+                            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="0.7">
+                        </div>
+                    </div>
+                </div>
+                <div class="player-info">
+                    <div id="nowPlaying">未选择音频</div>
+                    <div class="progress-container">
+                        <input type="range" id="progressBar" min="0" max="100" value="0" class="progress-bar">
+                        <div class="time-display">
+                            <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div class="audio-library">
+                <div class="library-header">
+                    <h2><i class="fas fa-folder-open"></i> 音频库</h2>
+                    <div class="folder-controls">
+                        <button id="expandAllBtn" class="folder-btn" title="展开所有文件夹">
+                            <i class="fas fa-expand-alt"></i> 展开所有
+                        </button>
+                        <button id="collapseAllBtn" class="folder-btn" title="折叠所有文件夹">
+                            <i class="fas fa-compress-alt"></i> 折叠所有
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="directory-structure" id="directoryContainer">
+                    <div class="loading">
+                        <i class="fas fa-spinner fa-spin"></i> 正在加载音频目录...
+                    </div>
+                </div>
+            </div>
+            
+            <div class="instructions">
+                <h3><i class="fas fa-info-circle"></i> 使用说明</h3>
+                <ul>
+                    <li>点击音频文件名开始播放</li>
+                    <li>点击文件夹名称可以展开/折叠文件列表</li>
+                    <li>使用上方控件管理文件夹展开状态</li>
+                    <li>点击下载按钮可下载当前播放的音频</li>
+                </ul>
+            </div>
+        </main>
+        
+        <footer>
+            <p>托管于GitHub Pages | 土豆歌唱合集导航</p>
+            <p class="github-link">
+                <i class="fab fa-github"></i> 
+                <a href="#" id="repoLink" target="_blank">查看GitHub仓库</a>
+            </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
