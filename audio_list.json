@@ -23,6 +23,17 @@
           "format": "MP3"
         }
       ]
+    },
+    {
+      "name": "刘德华",
+      "path": "audio/刘德华",
+      "files": [
+        {
+          "name": "冰雨 cover by 土豆",
+          "filename": "冰雨 cover by 土豆.mp3",
+          "format": "MP3"
+        }
+      ]
     }
   ]
 }
