@@ -34,6 +34,17 @@
           "format": "MP3"
         }
       ]
+    },
+    {
+      "name": "陈小春",
+      "path": "audio/陈小春",
+      "files": [
+        {
+          "name": "独家记忆 cover by 土豆",
+          "filename": "独家记忆 cover by 土豆.mp3",
+          "format": "MP3"
+        }
+      ]
     }
   ]
 }
